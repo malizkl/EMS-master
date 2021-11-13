@@ -2,6 +2,15 @@
     "functions": {
       "api/*.php": {
         "runtime": "vercel-php@0.4.0"
-      }
+        
+      },
+      "headers" : [
+        {
+          "key" : "Cache-Control",
+          "value" : "public, max-age=0, must-revalidate"
+        }
+      ]
+
+      
     }
   }
