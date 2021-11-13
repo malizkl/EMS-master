@@ -1,20 +1,11 @@
 {
-    
     "functions": {
       "api/*.php": {
         "runtime": "vercel-php@0.4.0"
-        
       }
     },
-
-    "headers": [
-        {
-          "source": "/service-worker.js",
-          "headers" : [
-            {
-              "key" : "Cache-Control",
-              "value" : "public, max-age=0, must-revalidate"
-            }
-          ]
-        }
-}
+    "routes": [
+      { "src": "/(.*)",  "dest": "/api/index.php" }
+    ]
+  }
+  
