@@ -12,7 +12,7 @@ if(!$_SESSION['u_name']){
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dash</title>
+<title>Dashboard</title>
 <style>
 
 body {
@@ -45,21 +45,21 @@ background-color:#d4d3cf;
 <div class="card  margina shadow-lg mb-5 bg-white mt-5">
 <div class="card-header"> Manage employees </div>
 <ul class="list-group " >
-  <li class="list-group-item"><a href="add_new_empl.php"> Add New Employees </a></li>
-  <li class="list-group-item"><a href="dash.php"> View all Employees </a></li>
+  <li class="list-group-item"><a href="add_new_empl.php"> Müşteri ekle </a></li>
+  <li class="list-group-item"><a href="dash.php"> Müşterileri görüntüle </a></li>
   </ul>
   
   </div>
   </div>
   <div class="col-lg-9 col-md-9 mt-5">
-<h3>Employees List </h3>
+<h3>Müşteri Listesi </h3>
 <table class="table table-bordered table-light table-hover table-striped ">
 <tr>
-<th>ID</th>
-<th>Name</th>
-<th>Deails</th>
-<th>Edit</th>
-<th>Delete</th>
+<th>no</th>
+<th>isim-soyisim</th>
+<th>ayrıntılar</th>
+<th>düzenle</th>
+<th>sil</th>
 </tr>
 <?php 
 
